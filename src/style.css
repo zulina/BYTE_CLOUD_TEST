@@ -1,0 +1,35 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 12;
+    color: #585858
+}
+
+input {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.options {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.options_block {
+    display: inline-block;
+}
+
+.op_block {
+    height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.op_label {
+    font-size: 9;
+    margin: 4px;
+}

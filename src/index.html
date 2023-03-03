@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Калькулятор</title>
+    </head>
+    <body>
+        <div class="options">
+          <div class="options_block">
+            <ul>
+              <li>
+                <label id="storage_label" for="storage">Storage: 0 GB</label>
+              </li>
+              <li>
+                <input type="range" id="storage" min="0" max="1000" step="1" value="0" list="storage_marks">
+              </li>
+            </ul>
+          </div>
+          <div class="options_block">
+            <ul>
+              <li>
+                <label id="transfer_label" for="transfer">Transfer: 0 GB</label>
+              </li>
+              <li>
+                <input type="range" id="transfer" min="0" max="1000" step="1" value="0" list="transfer_marks">
+              </li>
+            </ul>
+          </div>  
+          <div class="options_block">
+            <ul>
+              <li>
+                <span>bunny.net:</span>
+              </li>
+              <li class="op_block">
+                <input type="radio" id="bunny_op_hdd" name="bunny_op" checked>
+                <label class="op_label" for="bunny_op_hdd">HDD</label>
+                <input type="radio" id="bunny_op_ssd" name="bunny_op" >
+                <label class="op_label" for="bunny_op_ssd">SSD</label>
+              </li>
+            </ul>
+          </div>
+          <div class="options_block">
+            <ul>
+              <li>
+                <span>scaleway.com:</span>
+              </li>
+              <li class="op_block">
+                <input type="radio" id="scaleway_op_multi" name="scaleway_op" checked>
+                <label class="op_label" for="scaleway_op_multi">Multi</label>
+                <input type="radio" id="scaleway_op_single" name="scaleway_op" >
+                <label class="op_label" for="scaleway_op_single">Single</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="width: 600px"><canvas id="bar_graph"></canvas></div>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
