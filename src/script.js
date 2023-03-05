@@ -39,7 +39,7 @@ const data = [
     }
 ];
 
-chartElem = new Chart(
+const chartElem = new Chart(
     document.getElementById('bar_graph'), 
     {
         type: 'bar',

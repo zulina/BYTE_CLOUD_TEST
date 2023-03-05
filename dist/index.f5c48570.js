@@ -597,7 +597,7 @@ const data = [
         price: max
     }
 ];
-chartElem = new (0, _autoDefault.default)(document.getElementById("bar_graph"), {
+const chartElem = new (0, _autoDefault.default)(document.getElementById("bar_graph"), {
     type: "bar",
     options: {
         indexAxis: "y",
